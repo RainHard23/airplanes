@@ -1,0 +1,12 @@
+@mixin typography($fontSize, $lineHeight, $fontWeight) {
+    margin: 0;
+
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    line-height: $lineHeight;
+    color: var(--color-text-primary);
+}
+
+.body2 {
+    @include typography(var(--font-size-s), var(--line-height-m), var(--font-weight-regular));
+}

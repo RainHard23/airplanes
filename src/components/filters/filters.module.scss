@@ -1,0 +1,63 @@
+.filters {
+    max-height: 350px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgb(0 0 0 / 10%);
+}
+
+.btn__container {
+    display: flex;
+    margin-bottom: 35px;
+    padding: 0 16px;
+}
+
+.leftButton {
+    border-right: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.rightButton {
+    border-left: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.filter__title {
+    padding: 12px 16px;
+
+    font-size: 14px;
+    font-weight: 600;
+    color: #6e6e6e;
+    text-transform: uppercase;
+}
+
+.activeButton {
+    color: #fff;
+    background-color: #2196f3;
+    border-color: #2196f3;
+
+    &:hover {
+        color: #fff !important;
+        background-color: #2196f3 !important;
+    }
+}
+
+.filter__checkbox {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+
+    &:hover {
+        background-color: #f1fcff;
+    }
+}
+
+.filter__checkbox:hover .checbox__btn {
+    opacity: 1;
+    background-color: #f1fcff;
+}
+
+.checbox__btn {
+    opacity: 0;
+}

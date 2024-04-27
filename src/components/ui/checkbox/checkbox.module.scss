@@ -1,0 +1,50 @@
+.StyledInput {
+    cursor: pointer;
+
+    position: relative;
+
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+
+    appearance: none;
+    border: 1px solid grey;
+    border-radius: 2px;
+
+    &:checked {
+        background-color: #f2fcff;
+        border: 1px solid #008bfa;
+
+        &::after {
+            content: url('../../../assets/icons/checkIcon.svg');
+
+            position: absolute;
+            top: 56%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &:disabled {
+            background-color: grey;
+            border: 1px solid grey;
+        }
+    }
+}
+
+.CheckboxWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.Label {
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    color: grey;
+}
